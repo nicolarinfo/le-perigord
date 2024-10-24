@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="N'hésitez pas à nous contacter" />
+  </head>
+
+  <body>
+    <!--debut du header-->
+    <header class="header">
+      <nav class="header__header-nav">
+        <ul class="header-nav__nav-list">
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="le-perigord.html">Le Périgord</a></li>
+          <li><a href="notre-gite.html">Notre gite</a></li>
+          <li><a href="nouscontacter.html">Contactez-nous</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--fin du header-->
+    <main>
+      <section class="section__section-welcome">
+        <div class="section-content">
+          <h1>Contactez-nous</h1>
+          <h2>Gourmandise et Partage</h2>
+          <p>
+            Nous serons très heureux de vous accueillir à
+            <strong>la Ferme Gourmande</strong> afin de vous faire partager
+            l'amour de notre région et de vous faire découvrir toutes nos plus
+            belles spécialités. Vous ne connaissez pas le Périgord Noir?
+            <em><strong>Réservez vite</strong></em>
+            <br />
+          </p>
+        </div>
+      </section>
+
+      <section class="section__section-iframe">
+        <iframe
+          class="section-iframe__iframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/3K_RsBc5oPM?si=scV5G4nF4olkU6BO"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <!-- debut section infos pratiques-->
+      <section class="section__section-contact">
+        <div class="section-content">
+          <div class="section-contact__infos">
+            <p class="contact-label">Adresse</p>
+            <p>10 impasse du breil,<br />24260 Le Bugues</p>
+
+            <p class="contact-label">Téléphone</p>
+            <p><a href="tel:+33782237810">07 82 23 78 10</a></p>
+
+            <p class="contact-label">Notre Email</p>
+            <p>
+              <a href="mailto:contact@lafermegourmande.com"
+                >contact@lafermegourmande.com</a
+              >
+            </p>
+          </div>
+          <div>
+            <h2>Nos horaires</h2>
+
+            <table>
+              <tr>
+                <th>Jours</th>
+                <th>Lundi</th>
+                <th>Mardi au Jeudi</th>
+                <th>Vendredi au dimanche</th>
+              </tr>
+
+              <tr>
+                <th>Horaires</th>
+
+                <!--    Balise td pour les cellules-->
+                <td>fermé</td>
+                <td>8h à 19h</td>
+                <td>8h à 20h</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!--    fin section infos pratiques-->
+      <section class="section__section-form">
+        <div class="section-content">
+          <form class="section-form__form">
+            <ul>
+              <li>
+                <label for="fullname">Nom Prénom</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  class="form-control"
+                  placeholder="Nom Prénom"
+                />
+              </li>
+
+              <li>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                />
+              </li>
+              <li>
+                <label for="phone">Téléphone</label>
+                <input type="text" id="phone" placeholder="téléphone" />
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  placeholder="Ecrivez-nous"
+                ></textarea>
+              </li>
+              <li>
+                <input type="submit" value="Envoyer" class="btn-submit" />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+      <section class="section__section-images">
+        <div class="section-content">
+          <figure>
+            <figcaption>C'est trop beau le Périgord noir</figcaption>
+            <img
+              class="section-images__img"
+              src="img/dordogne.jpg"
+              alt="Une petite baignade dans la dordogne"
+            />
+            <img
+              class="section-images__img"
+              src="img/hotel-sarlat.jpg"
+              alt="un bel hôtel au bord de l'eau à Sarlat"
+            />
+            <img
+              class="section-images__img"
+              src="img/perigord-noir.jpg"
+              alt="un château au bord de la Dordogne"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Copyright 2019 -
+        <a
+          href="https://www.guide-du-perigord.com/fr/tourisme/decouvrir/visite-du-perigord/le-perigord-noir.html"
+          target="_blank"
+          >Office du tourisme du Périgord</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
